@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&family=Nunito:wght@700;800&display=swap');
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Memberikan ruang napas di layar kecil */
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Lebar maksimal diperbesar menjadi 600px dan menggunakan % agar responsif */
+.brutal-card {
+    background-color: #FF5722;
+    border: 4px solid #121212;
+    box-shadow: 10px 10px 0px #00FF00;
+    width: 100%;
+    max-width: 600px; 
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(32px, 6vw, 48px); /* Ukuran font responsif */
+    line-height: 1;
+    color: #121212;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+}
+
+.card-header p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: #121212;
+    margin: 0;
+    font-weight: 800;
+}
+
+.content-box {
+    background-color: #ffffff;
+    border: 4px solid #121212;
+    padding: 20px;
+    position: relative;
+}
+
+/* Membuat foto profil persis di tengah */
+.profile-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #121212;
+    padding-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 4px solid #121212;
+    box-shadow: 4px 4px 0px #121212;
+}
+
+.info-text h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    color: #121212;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.info-text p {
+    font-size: 15px;
+    color: #121212;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Gaya untuk bagian Riwayat Pendidikan */
+.education-box {
+    border-top: 4px solid #121212;
+    padding-top: 20px;
+}
+
+.section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: #121212;
+    text-align: left;
+}
+
+.edu-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.edu-year {
+    background-color: #00FF00;
+    color: #121212;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid #121212;
+    padding: 2px 8px;
+}
+
+.edu-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 800;
+    color: #121212;
+}
+
+.edu-desc {
+    font-size: 14px;
+    color: #121212;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Gaya Tombol Sosial Media */
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap; /* Membungkus tombol jika layar terlalu kecil */
+}
+
+.social-btn {
+    background-color: #ffffff;
+    color: #121212;
+    border: 4px solid #121212;
+    padding: 10px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 4px 4px 0px #121212;
+    transition: all 0.1s ease;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+}
+
+.social-btn.fb:hover { background-color: #1877F2; color: #fff; }
+.social-btn.ig:hover { background-color: #E4405F; color: #fff; }
+.social-btn.tt:hover { background-color: #00FF00; }
+
+.social-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #121212;
+}
